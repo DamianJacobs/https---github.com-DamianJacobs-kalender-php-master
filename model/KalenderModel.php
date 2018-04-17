@@ -67,3 +67,7 @@ function getDeleteBirthday($id){
     $query->execute();
     $db = null;
 }
+
+
+
+

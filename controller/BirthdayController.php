@@ -21,7 +21,7 @@ function edit($id)
 }
 
 function editBirthday(){
-
+     getEditBirthday($_POST);
     header('Location:' . URL . 'Home/index');
 
 }
@@ -29,8 +29,10 @@ function editBirthday(){
 
 
 
-function deleteBirthday($id){
-    getDeleteBirthday($id);
+function delete($id){
+$birthday = getDeleteBirthday($id);
+
+
     header('location:' .  URL . 'Home/index');
 
 
